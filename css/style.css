@@ -44,8 +44,8 @@ ul {
 
 .header-logo {
   position: absolute;
-  width: 15rem;
-  left: 38%;
+  width: 18rem;
+  left: 36%;
 }
 
 .header-menu {
@@ -137,7 +137,7 @@ ul {
   width: 4rem;
   height: 1rem;
   margin-right: 1rem;
-  background-color: #fb5;
+  background-color: #f1b010;
 }
 
 .ships p {
@@ -158,7 +158,7 @@ ul {
 }
 
 .ships-list::-webkit-scrollbar-thumb {
-  background-color: #fb5;
+  background-color: #f1b010;
 }
 .ships-list::-webkit-scrollbar-track {
   background-color: transparent;
@@ -196,7 +196,7 @@ ul {
   width: 2rem;
   height: 1rem;
   margin-right: 1rem;
-  background-color: #fb5;
+  background-color: #f1b010;
 }
 
 .faq-list dd {
@@ -228,13 +228,13 @@ ul {
   width: 2rem;
   height: 1rem;
   margin-right: 1rem;
-  background-color: #fb5;
+  background-color: #f1b010;
 }
 
 .copy {
   grid-column: 3 / 5;
   margin-bottom: 3.2rem;
-  background-color: #fb5;
+  background-color: #f1b010;
 }
 
 .copy p {
