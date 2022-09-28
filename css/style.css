@@ -21,6 +21,10 @@ body {
   grid-template-columns: 1fr 12rem minmax(30rem, 80rem) 1fr;
 }
 
+ul {
+  list-style: none;
+}
+
 #background {
   position: fixed;
   top: 0;
@@ -28,4 +32,212 @@ body {
   bottom: 0;
   right: 0;
   z-index: -1;
+}
+
+header {
+  position: relative;
+  grid-column: 2/4;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  width: 15rem;
+  left: 39%;
+}
+
+.menu {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.menu li:nth-child(2) {
+  margin-right: 20rem;
+}
+
+.menu li a{
+  display: block;
+  padding: 1rem;
+  margin-right: 1rem;
+  color: #faf6ed;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: .1em;
+  position: relative;
+}
+
+.menu li a::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #d30726b9;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.menu li a:hover::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #d30727;
+  box-shadow: 0 0 10px 1px #d30727;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.grid-section {
+  grid-column: 2 / 4;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 9rem 30rem 1fr;
+  gap: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 6.4rem;
+}
+
+.title {
+  font-family: 'Playfair Display SC', georgia;
+  font-size: 9.6rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  grid-column: 1 / 3;
+}
+
+.item-img {
+  display: block;
+  max-width: 100%;
+}
+
+.ships h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 1.6rem;
+  color: #E54;
+}
+
+.ships h2::before{
+  content: '';
+  display: inline-block;
+  width: 4rem;
+  height: 1rem;
+  margin-right: 1rem;
+  background-color: #fb5;
+}
+
+.ships p {
+  font-family: Helvetica, Arial;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.ships-list {
+  height: 37rem;
+  overflow-y: scroll;
+  grid-column: 1/3;
+  margin-top: 3.2rem;
+}
+
+.ships-list::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+.ships-list::-webkit-scrollbar-thumb {
+  background-color: #fb5;
+}
+.ships-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.ships-list__item {
+  padding-bottom: 3rem;
+  cursor: pointer;
+}
+
+.ships-description {
+  grid-column: 3;
+  margin-top: 3.2rem;
+}
+
+.ships-description section {
+  margin-bottom: 4.8rem;
+}
+
+.faq-list {
+  grid-column: 2 / 4;
+}
+
+.faq-list dt {
+  font-weight: bold;
+  margin-top: 3.2rem;
+  margin-bottom: .8rem;
+  color: #E54;
+  cursor: pointer;
+}
+
+.faq-list dt::before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  margin-right: 1rem;
+  background-color: #fb5;
+}
+
+.faq-list dd {
+  font-family: Helvetica, Arial;
+  margin-bottom: .8rem;
+  margin-left: 3rem;
+}
+
+.map {
+  grid-column: 2 / 4;
+}
+
+.map-space{
+  width: 100%;
+}
+
+.details {
+  grid-column: 4;
+}
+
+.details li {
+  margin-bottom: 1.6rem;
+  font-family: Helvetica, Arial;
+}
+
+.details li::before{
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  margin-right: 1rem;
+  background-color: #fb5;
+}
+
+.copy {
+  grid-column: 3 / 5;
+  margin-bottom: 3.2rem;
+  background-color: #fb5;
+}
+
+.copy p {
+  padding:  2rem;
+  font-weight: bold;
 }
