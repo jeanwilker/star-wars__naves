@@ -138,7 +138,7 @@ ul {
   width: 4rem;
   height: 1rem;
   margin-right: 1rem;
-  background-color: #f1b010;
+  background-color: #DBA90D;
 }
 
 .ships p {
@@ -159,7 +159,7 @@ ul {
 }
 
 .ships-list::-webkit-scrollbar-thumb {
-  background-color: #f1b010;
+  background-color: #DBA90D;
 }
 .ships-list::-webkit-scrollbar-track {
   background-color: transparent;
@@ -197,7 +197,7 @@ ul {
   width: 2rem;
   height: 1rem;
   margin-right: 1rem;
-  background-color: #f1b010;
+  background-color: #DBA90D;
 }
 
 .faq-list dd {
@@ -229,13 +229,13 @@ ul {
   width: 2rem;
   height: 1rem;
   margin-right: 1rem;
-  background-color: #f1b010;
+  background-color: #DBA90D;
 }
 
 .copy {
   grid-column: 3 / 5;
   margin-bottom: 3.2rem;
-  background-color: #f1b010;
+  background-color: #DBA90D;
 }
 
 .copy p {

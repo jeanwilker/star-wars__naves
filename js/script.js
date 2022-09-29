@@ -18,8 +18,8 @@ function initTabNav() {
       })
     })
   }
-}
-initTabNav();
+}initTabNav();
+
 
 function initAccordion() {
   const accordionList = document.querySelectorAll('.js-accordion dt')
@@ -38,5 +38,24 @@ function initAccordion() {
       item.addEventListener('click', activeAccordion)
     })
   }
-}
-initAccordion();
+}initAccordion();
+
+
+function initSmoothScroll() {
+  const onternalLinks = document.querySelectorAll('.js-menu a[href^="#"]');
+
+  function scrollSection(event) {
+    event.preventDefault();
+    const href = this.getAttribute('href');
+    const section = document.querySelector(href);
+    
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
+  onternalLinks.forEach((link) => {
+    link.addEventListener('click', scrollSection);
+  });
+}initSmoothScroll();
