@@ -40,12 +40,13 @@ ul {
   justify-content: center;
   display: flex;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .header-logo {
   position: absolute;
-  width: 18rem;
-  left: 37%;
+  width: 32rem;
+  left: 29%;
 }
 
 .header-menu {
@@ -56,11 +57,11 @@ ul {
 .header-menu ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 6rem;
 }
 
 .header-menu li:nth-child(2) {
-  margin-right: 20rem;
+  margin-right: 40rem;
 }
 
 .header-menu li a{
