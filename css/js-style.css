@@ -1,6 +1,7 @@
 .js-tab__content section {
   display: none;
 }
+
 .js-tab__content section.active {
   display: block !important;
   animation: show .5s forwards;
@@ -44,4 +45,15 @@
     opacity: 1;
     max-height: 20rem;
   }
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js-scroll.active {
+  opacity: 1;
+  transform: translate3d(0 , 0, 0);
 }
