@@ -15,7 +15,7 @@
 body {
   font-size: 1.6rem;
   overflow-x: hidden;
-  background-color: #000;
+  background-color: #0e1318;
   color: #faf6ed;
   display: grid;
   grid-template-columns: 1fr 12rem minmax(30rem, 80rem) 1fr;
@@ -45,8 +45,8 @@ ul {
 
 .header-logo {
   position: absolute;
-  width: 32rem;
-  left: 29%;
+  width: 30rem;
+  left: 30%;
 }
 
 .header-menu {
