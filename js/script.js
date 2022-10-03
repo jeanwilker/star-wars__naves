@@ -84,3 +84,13 @@ function initScrollAnimation() {
 
   }
 }initScrollAnimation();
+
+const navbarMobile = document.querySelector('.navbar-mobile');
+const navbarMenu  = document.querySelector('.navbar');
+
+function openMenu() {
+  navbarMobile.classList.toggle('active');
+  navbarMenu.classList.toggle('active');
+}
+
+navbarMobile.addEventListener('click', openMenu);
