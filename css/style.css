@@ -224,7 +224,7 @@ ul {
   grid-column: 3/5;
   margin-bottom: 3.2rem;
 
-  background-color: #202020;
+  background-color: #DBA90D;
 }
 
 .copy p {
@@ -258,21 +258,18 @@ ul {
     font-size: 3rem;
   }
 
-  .navbar {
-    display: none;
-  }
-
-  .navbar.active{
-    display: block;
+  .navbar{
     position: fixed;
-    inset: 0 0 0 60%;
-    margin: 0;
     z-index: 10;
+    inset: 0 0 0 60%;
+
+    flex-direction: column;
+    margin-top: 0;
+    padding: min(30vh, 8rem) .5em;
   }
 
   .navbar-menu {
     flex-direction: column;
-    padding: min(30vh, 8rem) .5em;
   }
 
   .navbar-mobile {
@@ -282,18 +279,6 @@ ul {
     z-index: 800;
     top: 2rem;
     right: 2rem;
-  }
-
-  .navbar-mobile.active span:nth-child(2){
-    opacity: 0;
-  }
-
-  .navbar-mobile.active span:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .navbar-mobile.active span:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
   }
 
 }

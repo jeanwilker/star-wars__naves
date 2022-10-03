@@ -42,7 +42,7 @@ function initAccordion() {
 
 
 function initSmoothScroll() {
-  const onternalLinks = document.querySelectorAll('.js-menu a[href^="#"]');
+  const onternalLinks = document.querySelectorAll('.js-navbar a[href^="#"]');
 
   function scrollSection(event) {
     event.preventDefault();
@@ -59,6 +59,7 @@ function initSmoothScroll() {
     link.addEventListener('click', scrollSection);
   });
 }initSmoothScroll();
+
 
 function initScrollAnimation() {
   const sections = document.querySelectorAll('.js-scroll');
@@ -85,12 +86,15 @@ function initScrollAnimation() {
   }
 }initScrollAnimation();
 
-const navbarMobile = document.querySelector('.navbar-mobile');
-const navbarMenu  = document.querySelector('.navbar');
 
-function openMenu() {
-  navbarMobile.classList.toggle('active');
-  navbarMenu.classList.toggle('active');
-}
+function initNavbar() {
+  const navbarMobile = document.querySelector('.navbar-mobile');
+  const navbarMenu  = document.querySelector('.navbar');
 
-navbarMobile.addEventListener('click', openMenu);
+  function openMenu() {
+    navbarMobile.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+  }
+
+  navbarMobile.addEventListener('click', openMenu);
+  }initNavbar();

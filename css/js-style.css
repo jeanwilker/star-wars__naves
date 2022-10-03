@@ -57,3 +57,27 @@
   opacity: 1;
   transform: translate3d(0 , 0, 0);
 }
+
+
+@media (max-width: 60rem) {
+  .js-navbar {
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  .js-navbar.active {
+    transform: translateX(0%);
+  }
+
+  .js-navbar__mobile.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .js-navbar__mobile.active span:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .js-navbar__mobile.active span:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
