@@ -1,6 +1,6 @@
 function initTabNav() {
-  const tabMenu = document.querySelectorAll('.js-tab__menu li');
-  const tabContent = document.querySelectorAll('.js-tab__content section');
+  const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+  const tabContent = document.querySelectorAll('[data-tab="content"] section');
 
   if(tabMenu.length && tabContent.length) {
     tabContent[0].classList.add('active');
@@ -22,7 +22,7 @@ function initTabNav() {
 
 
 function initAccordion() {
-  const accordionList = document.querySelectorAll('.js-accordion dt')
+  const accordionList = document.querySelectorAll('[data-anime="accordion"] dt')
   const activeClass = 'active'
 
   if(accordionList.length) {
@@ -42,7 +42,7 @@ function initAccordion() {
 
 
 function initSmoothScroll() {
-  const onternalLinks = document.querySelectorAll('.js-navbar a[href^="#"]');
+  const onternalLinks = document.querySelectorAll('[data-navbar="soft"] a[href^="#"]');
 
   function scrollSection(event) {
     event.preventDefault();
@@ -62,7 +62,7 @@ function initSmoothScroll() {
 
 
 function initScrollAnimation() {
-  const sections = document.querySelectorAll('.js-scroll');
+  const sections = document.querySelectorAll('[data-anime="scroll"]');
 
   if(sections.length) {
     const halfWindow = window.innerHeight * 0.6;
@@ -88,7 +88,7 @@ function initScrollAnimation() {
 
 
 function initNavbar() {
-  const navbarMobile = document.querySelector('.navbar-mobile');
+  const navbarMobile = document.querySelector('[data-navbar-mobile="transform"]');
   const navbarMenu  = document.querySelector('.navbar');
 
   function openMenu() {

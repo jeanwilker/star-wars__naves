@@ -77,6 +77,11 @@ ul {
   font-size: 1.8rem;
   letter-spacing: .1em;
   position: relative;
+  transition: 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #DBA90D;
 }
 
 .grid-section {
@@ -232,6 +237,7 @@ ul {
   font-weight: bold;
 }
 
+
 @media (max-width: 60rem) {
   body {
     grid-template-columns: 1fr;
@@ -242,7 +248,7 @@ ul {
   }
 
   .grid-section {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 20rem 1fr;
     gap: 1rem;
   }
 
@@ -255,7 +261,7 @@ ul {
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .navbar{

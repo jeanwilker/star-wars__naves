@@ -13,13 +13,13 @@
 
   <img class="logo" src="./assets/logo.svg" alt="Logo Star Wars">
 
-  <div class="navbar-mobile js-navbar__mobile">
+  <div class="navbar-mobile" data-navbar-mobile="transform">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-  <nav class='navbar js-navbar'>
+  <nav class='navbar' data-navbar="soft">
     <ul class="navbar-menu">
       <li><a href="#ships">Naves</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -28,10 +28,10 @@
     </ul>
   </nav>
 
-  <section class='grid-section ships js-scroll' id='ships'>
+  <section class='grid-section ships' data-anime="scroll" id='ships'>
     <h1 class='title'>Naves estelares</h1>
     
-    <ul class="ships-list js-tab__menu">
+    <ul class="ships-list" data-tab="menu">
       <li class="ships-list__item">
         <img class="item-img" src="./assets/x-wing.svg" alt="Nave X-wing">
       </li>
@@ -57,7 +57,7 @@
       </li>
     </ul>
 
-    <div class="ships-description js-tab__content">
+    <div class="ships-description" data-tab="content">
       <section>
         <h2>X-wing</h2>
         <p>Caças estelares X-wing eram um tipo de caça estelar marcados por suas
@@ -122,9 +122,9 @@
     </div>
   </section>
 
-  <section class="grid-section faq js-scroll" id="faq">
+  <section class="grid-section faq" data-anime="scroll" id="faq">
     <h1 class="title">FAQ</h1>
-    <dl class="faq-list js-accordion">
+    <dl class="faq-list" data-anime="accordion">
       <dt>Quem é o dev que desenvolveu esse site?</dt>
       <dd>Seu nome é Jean Wilker. Um desenvolvedor front-end apaixonado por tecnologia, 
         que tem habilidades com HTML, CSS, javaScript e ReactJS. Já fez outros projetos 
@@ -143,7 +143,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contact js-scroll" id="contact">
+  <section class="grid-section contact" data-anime="scroll" id="contact">
     <h1 class="title">Contato</h1>
     <div class="map">
       <iframe class="map-space" src="https://otherlife.davidcanavese.com/galaxymap2/" 
