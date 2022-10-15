@@ -17,13 +17,15 @@ body {
   overflow-x: hidden;
   background-color: #0e1318;
   color: #faf6ed;
-
-  display: grid;
-  grid-template-columns: 1fr 12rem minmax(30rem, 80rem) 1fr
 }
 
 ul {
   list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 12rem minmax(30rem, 80rem) 1fr;
 }
 
 #background {
@@ -239,7 +241,7 @@ ul {
 
 
 @media (max-width: 60rem) {
-  body {
+  .grid-container {
     grid-template-columns: 1fr;
   }
 

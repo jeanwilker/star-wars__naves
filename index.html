@@ -6,161 +6,177 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/js-style.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <title>Naves Estelares</title>
 </head>
 <body>
-  <div id="background"></div>
+  <div class="grid-container">
+    <div id="background"></div>
 
-  <img class="logo" src="./assets/logo.svg" alt="Logo Star Wars">
+    <img class="logo" src="./assets/logo.svg" alt="Logo Star Wars">
 
-  <div class="navbar-mobile" data-navbar-mobile="transform">
-    <span></span>
-    <span></span>
-    <span></span>
+    <div class="navbar-mobile" data-navbar-mobile="transform">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class='navbar' data-navbar="soft">
+      <ul class="navbar-menu">
+        <li><a href="#ships">Naves</a></li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li><a data-modal="open" href="login.html">Login →</a></li>
+      </ul>
+    </nav>
+
+    <section class='grid-section ships' data-anime="scroll" id='ships'>
+      <h1 class='title'>Naves estelares</h1>
+      
+      <ul class="ships-list" data-tab="menu">
+        <li class="ships-list__item">
+          <img class="item-img" src="./assets/x-wing.svg" alt="Nave X-wing">
+        </li>
+
+        <li class="ships-list__item">
+          <img class="item-img" src="./assets/millennium-falcon.svg" alt="Nave Millennium Falcon">
+        </li>
+
+        <li class="ships-list__item">
+          <img class="item-img" src="./assets/A-wing.svg" alt="Nave RZ-1 A-wing">
+        </li>
+
+        <li class="ships-list__item">
+          <img class="item-img" src="./assets/TIE-fighter.svg" alt="Nave TIE/LN starfighter">
+        </li>
+
+        <li class="ships-list__item">
+          <img class="item-img" src="./assets/star-destroyer.svg" alt="Nave Destróier Estelar">
+        </li>
+
+        <li class="ships-list__item">
+          <img class="item-img" src="./assets/TIE-silencer.svg" alt="Nave TIE silencer">
+        </li>
+      </ul>
+
+      <div class="ships-description" data-tab="content">
+        <section>
+          <h2>X-wing</h2>
+          <p>Caças estelares X-wing eram um tipo de caça estelar marcados por suas
+            distintivas asas que se assemelhavam a um "X" quando em posição de ataque.
+            Durante a Guerra Civil Galáctica, a Aliança Rebelde usou caças T-65B X-wing 
+            em várias batalhas, como a Batalha de Yavin e a Batalha de Endor.
+            <br><br>
+            Aproximadamente trinta anos depois, uma diferente variante de X-wing, o 
+            T-70, foi usado pela Resistência, e um modelo mais avançado, o T-85, foi 
+            usado pela Nova República.</p>
+        </section>
+        <section>
+          <h2>Millennium Falcon</h2>
+          <p>A Millennium Falcon foi uma cargueiro leve corelliana YT-1300 usada pelos 
+            contrabandistas Han Solo e Chewbacca durante a Guerra Civil Galáctica. 
+            Foi posse anteriormente de Lando Calrissian, quem a perdeu para Solo em 
+            um jogo de Sabacc.</p>
+        </section>
+        <section>
+          <h2>RZ-1 A-wing</h2>
+          <p>O Interceptador RZ-1 A-Wing foi um caça estelar utilizado pela Aliança 
+            pela Restauração da República e por células rebeldes durante a Guerra 
+            Civil Galáctica. A engenharia desses caças foi bastante apreciada pelas 
+            forças da aliança, fazendo, assim, com que fossem utilizados na Batalha 
+            de Endor. Eram equipados com mísseis de concussão, e dois canhões laterais. 
+            Por sua velocidade e fogo rápido, esse caça foi utilizado em interceptações 
+            e ataques rápidos.</p>
+        </section>
+        <section>
+          <h2>TIE/LN starfighter</h2>
+          <p>Os Caças TIE/LN foram fabricados pela Sistemas de Frota Sienar a pedido 
+            do Império Galáctico, sendo uma melhoria do modelo Caça TIE.
+            <br><br>
+            Seu motor era um dos sistemas de propulsão mais precisos fabricados na 
+            galáxia e, por não conter peças móveis, era de baixo valor de manutenção. 
+            Ao contrário dos modelos TIE anteriores, o TIE/LN contava com geradores 
+            independentes para seu motor e sistema de armas. A falta de escudos, 
+            hiperpropulsor, e sistemas de suporte-à-vida, aliados ao design avançado 
+            do motor, conferia ao caça uma excepcional manobrabilidade.</p>
+        </section>
+        <section>
+          <h2>Destróier Estelar</h2>
+          <p>Destróier Estelar era o termo usado para descrever tanto um certo tipo 
+            de naves capitais de médio porte utilizadas pela República Galáctica, 
+            o Império Galáctico, a Nova República, o Remanescentes Imperiais, a 
+            Federação Galáctica das Alianças Livres, o Aliança no exílio, o Império 
+            Fel e Império Galáctico de Darth Krayt, bem como naves de guerra fortemente 
+            armadas em geral.</p>
+        </section>
+        <section>
+          <h2>TIE silencer</h2>
+          <p>O caça de superioridade espacial TIE/vn, formalmente conhecido como 
+            caça de superioridade espacial TIE vendetta e apelidado de TIE silencer, 
+            ra uma variante angular dos caças estelares da linha TIE usados 
+            pela Primeira Ordem. Um produto da Sienar-Jaemus Fleet Systems, seu 
+            design agressivo e poder de fogo igualmente impressionante foram criados 
+            especificamente para uso entre os membros de elite da Primeira Ordem. 
+            Como tal, o caça foi projetado para velocidade e manuseio, embora pilotos 
+            menores ainda estivessem sobrecarregados e incapazes de manter o controle 
+            do navio ágil.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="grid-section faq" data-anime="scroll" id="faq">
+      <h1 class="title">FAQ</h1>
+      <dl class="faq-list" data-anime="accordion">
+        <dt>Quem é o dev que desenvolveu esse site?</dt>
+        <dd>Seu nome é Jean Wilker. Um desenvolvedor front-end apaixonado por tecnologia, 
+          que tem habilidades com HTML, CSS, javaScript e ReactJS. Já fez outros projetos 
+          utilizando essas tecnologias e vem aprimorando seus conhecimentos a cada dia. 
+          É uma pessoa de iniciativa e colaborativa, estando sempre disposto 
+          a ajudar e entregar resultados...</dd>
+
+        <dt></dt>
+        <dd></dd>
+
+        <dt></dt>
+        <dd></dd>
+
+        <dt></dt>
+        <dd></dd>
+      </dl>
+    </section>
+
+    <section class="grid-section contact" data-anime="scroll" id="contact">
+      <h1 class="title">Contato</h1>
+      <div class="map">
+        <iframe class="map-space" src="https://otherlife.davidcanavese.com/galaxymap2/" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <ul class="details">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <footer class="copy">
+      <p></p>
+    </footer>
   </div>
 
-  <nav class='navbar' data-navbar="soft">
-    <ul class="navbar-menu">
-      <li><a href="#ships">Naves</a></li>
-      <li><a href="#faq">Faq</a></li>
-      <li><a href="#contact">Contato</a></li>
-      <li><a href="#">Login →</a></li>
-    </ul>
-  </nav>
-
-  <section class='grid-section ships' data-anime="scroll" id='ships'>
-    <h1 class='title'>Naves estelares</h1>
-    
-    <ul class="ships-list" data-tab="menu">
-      <li class="ships-list__item">
-        <img class="item-img" src="./assets/x-wing.svg" alt="Nave X-wing">
-      </li>
-
-      <li class="ships-list__item">
-        <img class="item-img" src="./assets/millennium-falcon.svg" alt="Nave Millennium Falcon">
-      </li>
-
-      <li class="ships-list__item">
-        <img class="item-img" src="./assets/A-wing.svg" alt="Nave RZ-1 A-wing">
-      </li>
-
-      <li class="ships-list__item">
-        <img class="item-img" src="./assets/TIE-fighter.svg" alt="Nave TIE/LN starfighter">
-      </li>
-
-      <li class="ships-list__item">
-        <img class="item-img" src="./assets/star-destroyer.svg" alt="Nave Destróier Estelar">
-      </li>
-
-      <li class="ships-list__item">
-        <img class="item-img" src="./assets/TIE-silencer.svg" alt="Nave TIE silencer">
-      </li>
-    </ul>
-
-    <div class="ships-description" data-tab="content">
-      <section>
-        <h2>X-wing</h2>
-        <p>Caças estelares X-wing eram um tipo de caça estelar marcados por suas
-          distintivas asas que se assemelhavam a um "X" quando em posição de ataque.
-          Durante a Guerra Civil Galáctica, a Aliança Rebelde usou caças T-65B X-wing 
-          em várias batalhas, como a Batalha de Yavin e a Batalha de Endor.
-          <br><br>
-          Aproximadamente trinta anos depois, uma diferente variante de X-wing, o 
-          T-70, foi usado pela Resistência, e um modelo mais avançado, o T-85, foi 
-          usado pela Nova República.</p>
-      </section>
-      <section>
-        <h2>Millennium Falcon</h2>
-        <p>A Millennium Falcon foi uma cargueiro leve corelliana YT-1300 usada pelos 
-          contrabandistas Han Solo e Chewbacca durante a Guerra Civil Galáctica. 
-          Foi posse anteriormente de Lando Calrissian, quem a perdeu para Solo em 
-          um jogo de Sabacc.</p>
-      </section>
-      <section>
-        <h2>RZ-1 A-wing</h2>
-        <p>O Interceptador RZ-1 A-Wing foi um caça estelar utilizado pela Aliança 
-          pela Restauração da República e por células rebeldes durante a Guerra 
-          Civil Galáctica. A engenharia desses caças foi bastante apreciada pelas 
-          forças da aliança, fazendo, assim, com que fossem utilizados na Batalha 
-          de Endor. Eram equipados com mísseis de concussão, e dois canhões laterais. 
-          Por sua velocidade e fogo rápido, esse caça foi utilizado em interceptações 
-          e ataques rápidos.</p>
-      </section>
-      <section>
-        <h2>TIE/LN starfighter</h2>
-        <p>Os Caças TIE/LN foram fabricados pela Sistemas de Frota Sienar a pedido 
-          do Império Galáctico, sendo uma melhoria do modelo Caça TIE.
-          <br><br>
-          Seu motor era um dos sistemas de propulsão mais precisos fabricados na 
-          galáxia e, por não conter peças móveis, era de baixo valor de manutenção. 
-          Ao contrário dos modelos TIE anteriores, o TIE/LN contava com geradores 
-          independentes para seu motor e sistema de armas. A falta de escudos, 
-          hiperpropulsor, e sistemas de suporte-à-vida, aliados ao design avançado 
-          do motor, conferia ao caça uma excepcional manobrabilidade.</p>
-      </section>
-      <section>
-        <h2>Destróier Estelar</h2>
-        <p>Destróier Estelar era o termo usado para descrever tanto um certo tipo 
-          de naves capitais de médio porte utilizadas pela República Galáctica, 
-          o Império Galáctico, a Nova República, o Remanescentes Imperiais, a 
-          Federação Galáctica das Alianças Livres, o Aliança no exílio, o Império 
-          Fel e Império Galáctico de Darth Krayt, bem como naves de guerra fortemente 
-          armadas em geral.</p>
-      </section>
-      <section>
-        <h2>TIE silencer</h2>
-        <p>O caça de superioridade espacial TIE/vn, formalmente conhecido como 
-          caça de superioridade espacial TIE vendetta e apelidado de TIE silencer, 
-          ra uma variante angular dos caças estelares da linha TIE usados 
-          pela Primeira Ordem. Um produto da Sienar-Jaemus Fleet Systems, seu 
-          design agressivo e poder de fogo igualmente impressionante foram criados 
-          especificamente para uso entre os membros de elite da Primeira Ordem. 
-          Como tal, o caça foi projetado para velocidade e manuseio, embora pilotos 
-          menores ainda estivessem sobrecarregados e incapazes de manter o controle 
-          do navio ágil.</p>
-      </section>
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="modal-btn__close" data-modal="close">X</button>
+      <form action="">
+        <label for="email">E-mail</label>
+        <input type="text" for="email" id="email">
+        <label for="password">Senha</label>
+        <input type="password" for="password" id="password">
+        <button class="modal-btn__submit" type="submit">Entrar</button>
+      </form>
     </div>
   </section>
-
-  <section class="grid-section faq" data-anime="scroll" id="faq">
-    <h1 class="title">FAQ</h1>
-    <dl class="faq-list" data-anime="accordion">
-      <dt>Quem é o dev que desenvolveu esse site?</dt>
-      <dd>Seu nome é Jean Wilker. Um desenvolvedor front-end apaixonado por tecnologia, 
-        que tem habilidades com HTML, CSS, javaScript e ReactJS. Já fez outros projetos 
-        utilizando essas tecnologias e vem aprimorando seus conhecimentos a cada dia. 
-        É uma pessoa de iniciativa e colaborativa, estando sempre disposto 
-        a ajudar e entregar resultados...</dd>
-
-      <dt></dt>
-      <dd></dd>
-
-      <dt></dt>
-      <dd></dd>
-
-      <dt></dt>
-      <dd></dd>
-    </dl>
-  </section>
-
-  <section class="grid-section contact" data-anime="scroll" id="contact">
-    <h1 class="title">Contato</h1>
-    <div class="map">
-      <iframe class="map-space" src="https://otherlife.davidcanavese.com/galaxymap2/" 
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <ul class="details">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </section>
-
-  <footer class="copy">
-    <p></p>
-  </footer>
 
   <script type="text/javascript" src="./js/particles.min.js"></script>
   <script type="text/javascript" src="./js/custom.js"></script>
