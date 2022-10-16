@@ -61,7 +61,7 @@ ul {
   grid-column: 3/5;
   padding: 1rem;
   margin-top: 2rem;
-  background-color: #202020;
+  background-color: #333;
 }
 
 .navbar-menu {
@@ -283,7 +283,7 @@ ul {
   .navbar-mobile {
     display: block;
     bottom: unset;
-    position: absolute;
+    position: fixed;
     z-index: 800;
     top: 2rem;
     right: 2rem;
