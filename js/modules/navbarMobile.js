@@ -5,7 +5,7 @@ export default function initNavbarMobile() {
   function openMenu() {
     navbarMobile.classList.toggle('active');
     navbarMenu.classList.toggle('active');
-  }
+  };
 
   navbarMobile.addEventListener('click', openMenu);
 };

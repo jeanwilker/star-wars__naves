@@ -1,0 +1,22 @@
+@media (max-width: 60rem) {
+  [data-navbar="soft"] {
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  [data-navbar="soft"].active {
+    transform: translateX(0%);
+  }
+
+  [data-navbar-mobile="transform"].active span:nth-child(2){
+    opacity: 0;
+  }
+
+  [data-navbar-mobile="transform"].active span:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  [data-navbar-mobile="transform"].active span:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
